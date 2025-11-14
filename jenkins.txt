@@ -1,0 +1,31 @@
+pipeline {
+  agent any
+  environment {
+    ENV = "dev"
+  }
+  stages {
+    stage('Build') {
+      steps {
+        echo "Building..."
+      }
+    }
+    stage('Test') {
+      steps {
+        echo "Testing..."
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo "Deploying to $ENV"
+      }
+    }
+  }
+  post {
+    success {
+      echo "Pipeline completed successfully!"
+    }
+    failure {
+      echo "Pipeline failed!"
+    }
+  }
+}

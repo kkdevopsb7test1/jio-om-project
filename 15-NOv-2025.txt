@@ -1,3 +1,4 @@
 today is monday
 Monitor the grafana
+script.sh
 

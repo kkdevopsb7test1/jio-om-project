@@ -6,4 +6,4 @@ spec:
     name:nginxcontainer
     image: nginx:latest
     port:
-      container port: 80
+      container port: 8080
